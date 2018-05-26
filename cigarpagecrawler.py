@@ -8,7 +8,7 @@ last_page = product_list_page.get_max_page()
 
 cigarjsonfile = open("cigars.json", "w")
 
-for i in range(50, 51):
+for i in range(1, last_page + 1):
     print(f"Scapping Page #{i} of {last_page}")
     for product_item in product_list_page.get_product_items(i):
 
